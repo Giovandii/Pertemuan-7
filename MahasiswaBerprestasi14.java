@@ -84,13 +84,12 @@ public class MahasiswaBerprestasi14 {
     int sequentialSearching (double cari){
         int posisi = -1;
         for (int j=0; j<listMhs.length; j++){
-            if (listMhs[j] != null){
 
-                if (Math.abs(listMhs[j].ipk - cari) < 0.0001){
-                    posisi = j;
-                    //break;
-                }
+            if (listMhs[j].ipk == cari ){
+                posisi = j;
+                //break;
             }
+            
         }
         return posisi;
     } 
