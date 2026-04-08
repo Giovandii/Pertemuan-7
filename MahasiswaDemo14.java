@@ -4,11 +4,11 @@ public class MahasiswaDemo14 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        MahasiswaBerprestasi14 data = new MahasiswaBerprestasi14();
-
+        
         System.out.print("Masukkan jumlah mahasiswa: ");
         int jumlahMhs = sc.nextInt();
         sc.nextLine(); // buang enter
+        MahasiswaBerprestasi14 data = new MahasiswaBerprestasi14(jumlahMhs);
 
         for (int i = 0; i < jumlahMhs; i++) {
 
